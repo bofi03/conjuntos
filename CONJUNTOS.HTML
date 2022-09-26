@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CONJUNTOS</title>
+	<link rel="stylesheet" type="text/css" href="CONJUNTOS.CSS">
+	
+	<script>
+
+		//interseccion
+
+		function interejemplo1(){ //ejemplo 1 
+			document.getElementById("interA1").value="1,2,3,4,5"
+			document.getElementById("interA2").value="3,2,5,7,8"
+		}
+
+		function interejemplo2(){ //ejemplo 2 
+			document.getElementById("interA1").value=" sabritas, chamoy, coctel de elote, 30000 pesos al mes, mi rukaleta"
+			document.getElementById("interA2").value=" ceviche, camarones, 30000 pesos al mes, mi rukaleta"
+		}
+		
+		function interborrar(){ //borrar
+			document.getElementById("interA1").value=""
+			document.getElementById("interA2").value=""
+			document.getElementById("interA3").value=""
+		}
+
+		function interseccion(){
+
+			var conjuntoA = document.getElementById("interA1").value.split(",");
+			var conjuntoB = document.getElementById("interA2").value.split(",");
+			var resultado = "";
+
+			for (let i = 0; i < conjuntoA.length; i++) {
+				
+				for (let j = 0; j < conjuntoB.length; j++) {
+					
+					if (conjuntoA[i] == conjuntoB[j]) {
+
+						resultado += conjuntoA[i] + " , "
+					}
+				}
+			}
+
+			document.getElementById("interA3").value = resultado;
+
+		}
+		
+		//union
+
+		function uinterejemplo1(){ //ejemplo 1 
+			document.getElementById("uinterA1").value="1,2,3,4,5"
+			document.getElementById("uinterA2").value="3,2,5,7,8"
+		}
+
+		function uinterejemplo2(){ //ejemplo 2 
+			document.getElementById("uinterA1").value=" sabritas, chamoy, coctel de elote, 30000 pesos al mes, mi rukaleta"
+			document.getElementById("uinterA2").value=" ceviche, camarones, 30000 pesos al mes, mi rukaleta"
+		}
+
+		function uinterborrar(){ //borrar
+			document.getElementById("uinterA1").value=""
+			document.getElementById("uinterA2").value=""
+			document.getElementById("uinterA3").value=""
+		}
+
+		function union(){
+			var unionA = document.getElementById("uinterA1").value
+			var unionB = document.getElementById("uinterA2").value
+			var uresultado = unionA + "," + unionB;
+
+			document.getElementById("uinterA3").value = uresultado;
+
+
+
+		}
+
+		//diferencia
+
+		function dinterejemplo1(){ //ejemplo 1 
+			document.getElementById("dinterA1").value="1,2,3,4,5"
+			document.getElementById("dinterA2").value="3,2,5,7,8"
+		}
+
+		function dinterejemplo2(){ //ejemplo 2 
+			document.getElementById("dinterA1").value=" sabritas, chamoy, coctel de elote, 30000 pesos al mes, mi rukaleta"
+			document.getElementById("dinterA2").value=" ceviche, camarones, 30000 pesos al mes, mi rukaleta"
+		}
+
+		function dinterborrar(){ //borrar
+			document.getElementById("dinterA1").value=""
+			document.getElementById("dinterA2").value=""
+			document.getElementById("dinterA3").value=""
+			document.getElementById("dinterA4").value=""
+
+		}
+
+		function diferencia(){
+
+			var A = document.getElementById("dinterA1").value.split(",");
+        	var B = document.getElementById("dinterA2").value.split(",");
+		
+            diff = A.filter(function(x) {
+                return B.indexOf(x) < 0 
+            })
+
+			paola = B.filter(function(x) {
+                return A.indexOf(x) < 0 
+            })
+			
+			document.getElementById("dinterA4").value = paola;
+
+			document.getElementById("dinterA3").value = diff;
+		}
+
+
+		//complemento
+
+		function cinterejemplo1(){ //ejemplo 1 
+			document.getElementById("cinterA1").value="1,2,3,4,5"
+			document.getElementById("cinterA2").value="3,2,5,7,8"
+		}
+
+		function cinterejemplo2(){ //ejemplo 2 
+			document.getElementById("cinterA1").value=" sabritas, chamoy, coctel de elote, 30000 pesos al mes, mi rukaleta"
+			document.getElementById("cinterA2").value=" ceviche, camarones, 30000 pesos al mes, mi rukaleta"
+		}
+
+		function cinterborrar(){ //borrar
+			document.getElementById("cinterA1").value=""
+			document.getElementById("cinterA2").value=""
+			document.getElementById("cinterA3").value=""
+		}
+
+		function complemento(){
+
+			var cconjuntoA = document.getElementById("cinterA1").value.split(",");
+			var cconjuntoA1 = document.getElementById("cinterA1").value.split(",");
+			var cconjuntoB = document.getElementById("cinterA2").value.split(",");
+			var cresultado = "";
+			let sacador
+
+			for (let i = 0; i < cconjuntoA.length; i++) {
+				
+				for (let j = 0; j < cconjuntoB.length; j++) {
+					
+					if (cconjuntoA[i] == cconjuntoB[j]) {
+
+						cconjuntoA1[i] = ''
+					}
+				}
+			}
+					document.getElementById("cinterA3").value = cconjuntoA1
+
+
+			}
+		
+
+
+	</script>
+
+</head>
+<body>
+
+	<center>
+
+		<div class="fondo">
+
+				
+			<div class="def4">
+				<div id="definicion" class="tdef4"><p class="hola" >DEFINICION</p></div>
+
+				<p class="defi">Es una colección de elementos considerada en sí misma como un objeto. 
+								Los elementos de un conjunto, pueden ser las siguientes: personas, números, colores, letras, 
+								figuras, etc. Se dice que un elemento (o miembro) pertenece al conjunto si está 
+								definido como incluido de algún modo dentro de él.</p>
+			</div>
+
+
+
+
+			<div  class="intercuadro">
+				<div id="inter" class="intertext"><p class="hola" >INTERSECCION</p></div>
+				<textarea name id="interA1"  class="interA" ></textarea>
+				<textarea name id="interA2"  class="interB" ></textarea>
+				<textarea name id="interA3" readonly class="interRES" ></textarea>
+				<input type="bottom" readonly value="Calcular" class="interCalcular" onclick="interseccion()">
+				<input type="bottom" readonly value="Limpiar" class="interLimpiar" onclick="interborrar()">
+				<input type="bottom" readonly value="Ej. 11"  class="interEj1" onclick="interejemplo1()">
+				<input type="bottom" readonly value="Ej. 2" class="interEj2" onclick="interejemplo2()">
+
+				<p class="intera">A =</p>
+				<p class="interb">B =</p>
+				<p class="intern">∩ = </p>
+			</div>
+
+
+						<div class="uintercuadro">
+				<div id="union" class="uintertext"><p class="hola" >UNION</p></div>
+				<textarea name id="uinterA1"  class="uinterA" ></textarea>
+				<textarea name id="uinterA2"  class="uinterB" ></textarea>
+				<textarea name id ="uinterA3" readonly class="uinterRES" ></textarea>
+				<input type="bottom" readonly value="Calcular" class="uinterCalcular" onclick="union()">
+				<input type="bottom" readonly value="Limpiar" class="uinterLimpiar" onclick="uinterborrar()">
+				<input type="bottom" readonly value="Ej. 1" class="uinterEj1" onclick="uinterejemplo1()">
+				<input type="bottom" readonly value="Ej. 2" class="uinterEj2" onclick="uinterejemplo2()">
+
+				<p class="uintera">A =</p>
+				<p class="uinterb">B =</p>
+				<p class="uintern">∩ = </p>
+			</div>
+
+
+				<div class="dintercuadro">
+				<div id="diferencia" class="dintertext"><p class="hola" >DIFERENCIA</p></div>
+				<textarea name id="dinterA1"  class="dinterA" ></textarea>
+				<textarea name id="dinterA2"  class="dinterB" ></textarea>
+				<textarea namae id="dinterA3" readonly class="dinterRES" ></textarea>
+				<textarea namae id="dinterA4" readonly class="dinterC" ></textarea>
+				<input type="bottom" readonly value="Calcular" class="dinterCalcular" onclick="diferencia()">
+				<input type="bottom" readonly value="Limpiar" class="dinterLimpiar" onclick="dinterborrar()">
+				<input type="bottom" readonly value="Ej. 1" class="dinterEj1" onclick="dinterejemplo1()">
+				<input type="bottom" readonly value="Ej. 2" class="dinterEj2" onclick="dinterejemplo2()">
+
+				<p class="dintera">A =</p>
+				<p class="dinterb">B =</p>
+				<p class="dintern">A - B = </p>
+				<p class="dinterc">B - A = </p>
+
+				
+			</div>
+
+
+				<div class="cintercuadro">
+				<div id="complemento" class="cintertext"><p class="hola" >COMPLEMENTO</p></div>
+				<textarea name id="cinterA1"  class="cinterA" ></textarea>
+				<textarea name id="cinterA2"  class="cinterB" ></textarea>
+				<textarea name id="cinterA3" readonly class="cinterRES" ></textarea>
+				<input type="bottom" readonly value="Calcular" class="cinterCalcular" onclick="complemento()">
+				<input type="bottom" readonly value="Limpiar" class="cinterLimpiar" onclick="cinterborrar()">
+				<input type="bottom" readonly value="Ej. 1" class="cinterEj1" onclick="cinterejemplo1()">
+				<input type="bottom" readonly value="Ej. 2" class="cinterEj2" onclick="cinterejemplo2()">
+
+				<p class="cintera">A =</p>
+				<p class="cinterb">B =</p>
+				<p class="cintern">∩ = </p>
+			</div>
+
+
+
+		</div>
+
+
+
+	</center>
+
+	<center>
+
+		<div id="menu" class="barra">
+
+			<div class="lista">
+				<li class="menu l1" ><p class="po ll1" ><a href="#definicion">Definicion</a></p></li>
+				<li class="menu l2" ><p class="po ll2" ><a href="#inter">Interseccion</a></p></li>
+				<li class="menu l3" ><p class="po ll3" ><a href="#union">Union</a></p></li>
+				<li class="menu l4" ><p class="po ll4" ><a href="#diferencia">Diferencia</a></p></li>
+				<li class="menu l5" ><p class="po ll5" ><a href="#complemento">Complemento</a></p></li>
+			</div>
+			
+			
+			<div class="interseccion"></div>
+
+		</div> 
+
+	</center>
+
+
+
+</body>
+</html>

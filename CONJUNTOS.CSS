@@ -1,0 +1,658 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+textarea{
+	resize: none;
+}
+
+body{
+	background: #f2f2f2;
+}
+
+
+textarea{
+	text-align: center;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+section[id]{
+	scroll-margin-bottom: 70px;
+}
+
+a{
+	text-decoration: none;
+	color: #A6ACAF;
+	display: inline-block;
+}
+
+img{
+	width: 50px;
+	height: 50px;
+}
+
+
+
+li{
+	box-shadow: 0px 4px 14px 0px ;
+}
+
+li:active{
+	box-shadow: 0px 0px 0px 0px ;
+}
+
+.fondo{
+	box-shadow:0px -4px 35px -10px;
+}
+
+
+.home{
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	background: #f2f2f2;
+	position: fixed;
+	box-shadow: 0px 4px 10px 0px;
+	border-color: red;
+	right: 100px;
+}
+
+.home:active{
+	box-shadow: 0px 4px 14px 0px;
+}
+
+.fondo{
+	background: #fff;
+	width: 1300px;
+	height: 4000px;
+	border-radius: 50px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.barra{
+	
+	background: #f2f2f2;
+	width: 80%;
+	height: 50px;
+	position: fixed;
+	bottom: 675px;
+	right: 150px;
+	border-radius: 20px;
+}
+
+
+
+.def4{
+
+width: 80%;
+height: 150px;
+background: #f2f2f2;
+position: relative;
+border-radius: 25px;
+top: 160px;
+box-shadow: 0px 0px 14px -5px ;
+
+}
+
+.tdef4{
+width: 200px;
+height: 50px;
+background: #E7E7E7;
+position: relative;
+top: -15px;
+right: 27px;
+border-radius: 10px;
+}
+
+.hola{
+	position: relative;
+	top: 15px;
+	color: #A6ACAF;
+}
+
+.menu{
+	list-style: none;
+}
+
+li{
+	display: inline-block;
+}
+
+.menu{
+
+	background: #E7E7E7;
+	width: 150px;
+	height: 50px;
+	margin-right: 40px;
+	color: #A6ACAF;
+}
+
+.menu:hover{
+
+	background: #D5D8DC;
+
+}
+
+.po{
+	position: relative;
+	top: 15px;
+}
+
+.defi{
+	position: relative;
+	top: 15px;
+	text-align: justify;
+	margin: 0px 40px;
+	color: #A6ACAF;
+}
+
+.intercuadro{
+
+width: 80%;
+height: 470px;
+background: #f2f2f2;
+position: relative;
+border-radius: 25px;
+top: 350px;
+
+}
+
+.intertext{
+	width: 200px;
+	height: 50px;
+	background: #E7E7E7;
+	position: relative;
+	top: -15px;
+	right: 27px;
+	border-radius: 10px;
+
+}
+
+.interA{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 43px;
+}
+
+.interB{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 68px;
+}
+
+.interRES{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 93px;
+}
+
+.interCalcular{
+	width: 50%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	right: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.interLimpiar{
+	width: 20%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	left: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.interEj1{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 324px;
+	right: 30px;
+}
+
+.interEj2{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 244px;
+	right: 30px;
+}
+
+.intera{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 310px;
+	left: 30px;
+}
+
+.interb{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 230px;
+	left: 30px;
+}
+
+.intern{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 143px;
+	left: 30px;
+}
+
+
+
+
+.uintercuadro{
+
+width: 80%;
+height: 470px;
+background: #f2f2f2;
+position: relative;
+border-radius: 25px;
+top: 550px;
+
+}
+
+.uintertext{
+	width: 200px;
+	height: 50px;
+	background: #E7E7E7;
+	position: relative;
+	top: -15px;
+	right: 27px;
+	border-radius: 10px;
+
+}
+
+.uinterA{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 43px;
+}
+
+.uinterB{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 68px;
+}
+
+.uinterRES{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 93px;
+}
+
+.uinterCalcular{
+	width: 50%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	right: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.uinterLimpiar{
+	width: 20%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	left: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.uinterEj1{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 324px;
+	right: 30px;
+}
+
+.uinterEj2{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 244px;
+	right: 30px;
+}
+
+.uintera{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 310px;
+	left: 30px;
+}
+
+.uinterb{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 230px;
+	left: 30px;
+}
+
+.uintern{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 143px;
+	left: 30px;
+}
+
+
+
+
+
+
+.dintercuadro{
+
+width: 80%;
+height: 570px;
+background: #f2f2f2;
+position: relative;
+border-radius: 25px;
+top: 750px;
+
+}
+
+.dintertext{
+	width: 200px;
+	height: 50px;
+	background: #E7E7E7;
+	position: relative;
+	top: -15px;
+	right: 27px;
+	border-radius: 10px;
+
+}
+
+.dinterA{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 43px;
+}
+
+.dinterB{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 68px;
+}
+
+.dinterRES{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 93px;
+}
+
+.dinterC{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 118px;
+}
+
+
+
+.dinterCalcular{
+	width: 50%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	right: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.dinterLimpiar{
+	width: 20%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	left: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.dinterEj1{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 324px;
+	right: 30px;
+}
+
+.dinterEj2{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 244px;
+	right: 30px;
+}
+
+.dintera{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 410px;
+	left: 30px;
+}
+
+.dinterb{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 330px;
+	left: 30px;
+}
+
+.dintern{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 243px;
+	left: 30px;
+}
+
+.dinterc{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 170px;
+	left: 30px;
+}
+
+
+
+
+.cintercuadro{
+
+width: 80%;
+height: 470px;
+background: #f2f2f2;
+position: relative;
+border-radius: 25px;
+top: 950px;
+
+}
+
+.cintertext{
+	width: 200px;
+	height: 50px;
+	background: #E7E7E7;
+	position: relative;
+	top: -15px;
+	right: 27px;
+	border-radius: 10px;
+
+}
+
+.cinterA{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 43px;
+}
+
+.cinterB{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 68px;
+}
+
+.cinterRES{
+	width: 80%;
+	height: 50px;
+	position: relative;
+	top: 93px;
+}
+
+.cinterCalcular{
+	width: 50%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	right: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.cinterLimpiar{
+	width: 20%;
+	height: 50px;
+	background: #EAECEE;
+	position: relative;
+	top: 145px;
+	left: 30px;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.cinterEj1{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 324px;
+	right: 30px;
+}
+
+.cinterEj2{
+	width: 50px;
+	height: 50px;
+	background: #EAECEE;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 244px;
+	right: 30px;
+}
+
+.cintera{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 310px;
+	left: 30px;
+}
+
+.cinterb{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 230px;
+	left: 30px;
+}
+
+.cintern{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	bottom: 143px;
+	left: 30px;
+}
+
+
+
+
+
+
+
+
